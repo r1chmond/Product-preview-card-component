@@ -25,7 +25,7 @@ section {
     height: 480px;
   }
   .image-section {
-    content: url("./images/image-product-mobile.jpg");
+    content: url(./images/image-product-mobile.jpg);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
