@@ -1,0 +1,112 @@
+body {
+  font-family: montserrat, sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  max-width: 500px;
+  max-height: 410px;
+}
+@media (max-width: 376px) {
+  .card {
+    flex-direction: column;
+    width: 330px;
+    height: 480px;
+  }
+  .image-section {
+    content: url("../images/image-product-mobile.jpg");
+    object-fit: cover;
+    max-height: 250px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .details-section {
+    padding-left: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+@media (min-width: 376px) and (max-width: 460px) {
+  .details-section {
+    overflow: hidden;
+  }
+}
+
+.details-section {
+  padding: 20px;
+  max-height: 410px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.image-section {
+  height: 410px;
+}
+.image {
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.top {
+  color: hsl(228, 12%, 48%);
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+.perfume-name {
+  color: hsl(212, 21%, 14%);
+  font-family: fraunces;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.description {
+  color: hsl(228, 12%, 48%);
+  font-size: 10px;
+  line-height: 15px;
+}
+.price-container {
+  display: flex;
+  column-gap: 20px;
+  padding: 10px 0;
+}
+.current-price {
+  color: hsl(158, 36%, 37%);
+  font-family: fraunces;
+  font-size: 18px;
+}
+.previous-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: line-through;
+}
+.button-container {
+  margin: 12px 0;
+}
+#cart-logo {
+  padding-right: 10px;
+}
+.addItem-button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding: 12px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
+}
+.addItem-button:hover {
+  background-color: hsl(156, 42%, 18%);
+}
