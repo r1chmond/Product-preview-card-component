@@ -20,7 +20,7 @@ body {
     height: 480px;
   }
   .image-section {
-    content: url("../images/image-product-mobile.jpg");
+    content: url(./images/image-product-mobile.jpg);
     object-fit: cover;
     max-height: 250px;
     border-top-left-radius: 8px;
